@@ -1,5 +1,13 @@
-let form = document.querySelector("#form");
-let input = document.querySelector("#text");
+function element(item) {
+    return document.querySelector(`${item}`);
+}
+
+function elements(item) {
+    return document.querySelectorAll(`${item}`);
+}
+
+let form = element("#form");
+let input = element("#text");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault(); //отменяем отправку данных на сервер
